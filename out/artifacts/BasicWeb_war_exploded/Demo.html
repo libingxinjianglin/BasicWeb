@@ -4,19 +4,20 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <script>
-
-        function init() {
-           setTimeout("onChanageImage()",2000);
+        function sonClickMe() {
+            var name = document.getElementById("name");
+            name.innerHTML = "<font>请输入文字长度大于6的字符</font>";
         }
 
-        function onChanageImage() {
-            var imageView = document.getElementById("imageView");
-            imageView.src = "image/link (1).jpg";
+        function sb() {
+            var name = document.getElementById("sv");
+            alert(name.value.length);
+            name.innerHTML = "<font>1111</font>";
         }
     </script>
 </head>
-<body onload="init()">
-<img src="image/link.jpg" id="imageView">
+<body>
+姓名:<input type="text" onfocus="sonClickMe()" onblur="sb()" id="sv"><span id="name"></span>
 </body>
 </html>
 
