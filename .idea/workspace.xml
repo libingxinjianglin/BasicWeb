@@ -21,9 +21,14 @@
         <entry file="file://$PROJECT_DIR$/web/Demo.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="276">
-              <caret line="12" column="50" selection-start-line="12" selection-start-column="50" selection-end-line="12" selection-end-column="50" />
+              <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="aaa.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/aaa.css">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file leaf-file-name="lib.dom.d.ts" pinned="false" current-in-tab="false">
@@ -41,6 +46,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -52,6 +58,7 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/web/WEB-INF/aaa.css" />
         <option value="$PROJECT_DIR$/web/Demo.html" />
       </list>
     </option>
@@ -102,7 +109,7 @@
               <item name="BasicWeb" type="b2602c69:ProjectViewProjectNode" />
               <item name="BasicWeb" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="image" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -114,10 +121,16 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="E:/soft/Git-2.18.0-64-bit.exe" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/Git-2.18.0-64-bit(1).exe" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\JavaWeb\BasicWeb\web" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -260,12 +273,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1531878498056</updated>
-      <workItem from="1531878501599" duration="6825000" />
+      <workItem from="1531878501599" duration="10212000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6825000" />
+    <option name="totallyTimeSpent" value="10212000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -329,10 +342,13 @@
     <entry file="file://$PROJECT_DIR$/web/image/link.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/web/aaa.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/web/Demo.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="276">
-          <caret line="12" column="50" selection-start-line="12" selection-start-column="50" selection-end-line="12" selection-end-column="50" />
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
         </state>
       </provider>
     </entry>

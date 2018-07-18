@@ -2,24 +2,22 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+<!--    <link href="aaa.css" rel="stylesheet">&lt;!&ndash;&ndash;&gt;-->
     <script>
-        function sonClickMe() {
-            var name = document.getElementById("name");
-            name.innerHTML = "<font>请输入文字长度大于6的字符</font>";
-        }
+        function onClick() {
+            var id = document.getElementById("name");
+            var p = document.createElement("p");
+            var text = document.createTextNode("哇哈哈");
+            p.appendChild(text);
+            id.appendChild(p);
 
-        function sb() {
-            var name = document.getElementById("sv");
-            var sb = document.getElementById("name");
-            alert(name.value.length);
-            sb.innerHTML = "<font>1111</font>";
         }
     </script>
 </head>
 <body>
-姓名:<input type="text" onfocus="sonClickMe()" onblur="sb()" id="sv"><span id="name"></span>
+<div id="name"></div>
 </body>
+<input type="button" onclick="onClick()" >
 </html>
 
 
