@@ -4,19 +4,19 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <script>
-        function onClickMe() {
-           var bgm = document.getElementById("imageView");
-           bgm.src = "image/link (1).jpg"
+
+        function init() {
+           setTimeout("onChanageImage()",2000);
         }
 
+        function onChanageImage() {
+            var imageView = document.getElementById("imageView");
+            imageView.src = "image/link (1).jpg";
+        }
     </script>
 </head>
-<body>
-<form action="Demo.html" onclick="onClickMe()">
-    <input type="button" value="哈哈">
-    <IMG src="image/link.jpg" id="imageView">
-</form>
-
+<body onload="init()">
+<img src="image/link.jpg" id="imageView">
 </body>
 </html>
 
