@@ -4,29 +4,17 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <script>
-       /* function onClickMe() {
-            var name = document.getElementById("name");
-            if("111"==name.value){
-                alert(name.value)
-                return true;
-            }
-            return false;
-        }*/
         function onClickMe() {
-            var name = document.getElementById("myNmae");
-            if("jianglin" == name.value){
-                alert(name.value);
-                return true;
-            }
-            return false;
+           var bgm = document.getElementById("imageView");
+           bgm.src = "image/link (1).jpg"
         }
 
     </script>
 </head>
 <body>
-<form action="Demo.html" onsubmit="return onClickMe()">
-    姓名：<input type="text" name="name" id="myNmae">
-    <input type="submit" value="哈哈">
+<form action="Demo.html" onclick="onClickMe()">
+    <input type="button" value="哈哈">
+    <img src="image/link.jpg" id="imageView">
 </form>
 
 </body>
