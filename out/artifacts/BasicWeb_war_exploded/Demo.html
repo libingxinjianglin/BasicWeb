@@ -1,37 +1,97 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
-    <script src="jquery-1.8.3.js" type="text/javascript"></script>
+    <title></title>
+    <script type="text/javascript" src="jquery-1.8.3.js"></script>
+    <!--
+        1. 导入JQ的包
+        2. 文档加载完成函数: 页面初始化
+        3. 获得所有的行 :   元素选择器
+        4. 根据行号奇数/偶数去修改颜色
+    -->
     <script>
-        $(function () {
-            setTimeout("f()",3000);
+        var str = ["北京","还来","添加"];
+        $(str).each(function (i,n) {
+            alert(n);
         });
-        function f() {
-            $("#sb").slideUp("slow");
-            setTimeout("a()",1000);
-
-        }
-        function a() {
-            $("#sb").show();
-        }
+       $(function () {
+           $("#checkAll").click(function () {
+               $("input[type = 'checkbox']").prop("checked",this.checked);
+           });
+           $("tr:even:gt(0)").css("background-color","#FFFF00");
+           $("");
+       })
     </script>
-    <style>
-
-        div[title="snb"]{
-            color: red;
-        }
-    </style>
 </head>
 
+
 <body>
-<img src="image/link%20(1).jpg" id="sb" style="display: none">
-<div>
-    <div id="sb" title="snb">
-        哈哈哈
-    </div>
-</div>
+<form>
+    <table border="1px" width="600px" id="tab">
+        <tr>
+            <td>
+                <input type="checkbox" id="checkAll"/>
+            </td>
+            <td>分类ID</td>
+            <td>分类名称</td>
+            <td>分类商品</td>
+            <td>分类描述</td>
+            <td>操作</td>
+        </tr>
+        <tr>
+            <td>
+                <input type="checkbox"/>
+            </td>
+            <td>1</td>
+            <td>手机数码</td>
+            <td>华为,小米,尼康</td>
+            <td>黑马数码产品质量最好</td>
+            <td>
+                <a href="#">修改</a>|<a href="#">删除</a>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="checkbox"/>
+            </td>
+            <td>2</td>
+            <td>成人用品</td>
+            <td>充气的</td>
+            <td>这里面的充气电动硅胶的</td>
+            <td><a href="#">修改</a>|<a href="#">删除</a></td>
+        </tr>
+        <tr>
+            <td>
+                <input type="checkbox"/>
+            </td>
+            <td>3</td>
+            <td>电脑办公</td>
+            <td>联想,小米</td>
+            <td>笔记本特卖</td>
+            <td><a href="#">修改</a>|<a href="#">删除</a></td>
+        </tr>
+        <tr>
+            <td>
+                <input type="checkbox"/>
+            </td>
+            <td>4</td>
+            <td>馋嘴零食</td>
+            <td>辣条,麻花,黄瓜</td>
+            <td>年货</td>
+            <td><a href="#">修改</a>|<a href="#">删除</a></td>
+        </tr>
+        <tr>
+            <td>
+                <input type="checkbox"/>
+            </td>
+            <td>5</td>
+            <td>床上用品</td>
+            <td>床单,被套,四件套</td>
+            <td>都是套子</td>
+            <td><a href="#">修改</a>|<a href="#">删除</a></td>
+        </tr>
+    </table>
+</form>
 </body>
 </html>
-
-
