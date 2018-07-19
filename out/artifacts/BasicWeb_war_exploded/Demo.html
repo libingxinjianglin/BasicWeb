@@ -11,17 +11,29 @@
         4. 根据行号奇数/偶数去修改颜色
     -->
     <script>
-        var str = ["北京","还来","添加"];
-        $(str).each(function (i,n) {
+        var str = ["北京", "还来", "添加"];
+
+        function nb() {
+            alert("。。。")
+        }
+        function sb(str,nb) {
+            for (var i = 0; i < str.length; i++) {
+                nb();
+            }
+        }
+        sb(str,nb);
+
+
+        $(str).each(function (i, n) {
             alert(n);
         });
-       $(function () {
-           $("#checkAll").click(function () {
-               $("input[type = 'checkbox']").prop("checked",this.checked);
-           });
-           $("tr:even:gt(0)").css("background-color","#FFFF00");
-           $("");
-       })
+        $(function () {
+            $("#checkAll").click(function () {
+                $("input[type = 'checkbox']").prop("checked", this.checked);
+            });
+            $("tr:even:gt(0)").css("background-color", "#FFFF00");
+            $("");
+        })
     </script>
 </head>
 
