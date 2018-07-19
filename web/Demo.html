@@ -2,24 +2,22 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <script src="jquery-1.8.3.js" type="text/javascript"></script>
     <script>
         $(function () {
-            setTimeout("f()",3000);
+           $("body>div").css("backgroud-color","green");  // 子元素选择器
+            $("body div").css("backgroud-color","green");  // 后代选择器
+            $("#one+div").css("backgroud-color","green");  // 相邻选择器。找出id为one的兄弟
         });
-        function f() {
-            $("#sb").slideUp("slow");
-            setTimeout("a()",1000);
-
-        }
-        function a() {
-            $("#sb").show();
-        }
     </script>
 </head>
 
 <body>
 <img src="image/link%20(1).jpg" id="sb" style="display: none">
+<div>
+    <div id="sb" title="snb">
+        哈哈哈
+    </div>
+</div>
 </body>
 </html>
 
