@@ -2,36 +2,21 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <!--    <link href="aaa.css" rel="stylesheet">&lt;!&ndash;&ndash;&gt;-->
+    <script src="jquery-1.8.3.js" type="text/javascript"></script>
     <script>
-        var provinces = [
-            ["深圳市","东莞市","惠州市","广州市"],
-            ["长沙市","岳阳市","株洲市","湘潭市"],
-            ["厦门市","福州市","漳州市","泉州市"]
-        ];
-    function selectProvince() {
-        var province = document.getElementById("province");
-        //得到当前选中的是哪个省份
-        alert(province.value);
-        var value = province.value;
-        //从数组中取出对应的城市信息
-        var cities = provinces[value];
-        var citySelect = document.getElementById("city");
-    }
+        jQuery(document).ready(function () {
+            alert("开始");
+        });
+        $(document).ready(function () {
 
-</script>
+        })
+        window.onload = function () {
+            alert("hello world")
+        }
+    </script>
 </head>
-
 <body>
-<!--选择省份-->
-<select onchange="selectProvince()" id="province">
-    <option value="-1">--请选择--</option>
-    <option value="0">广东省</option>
-    <option value="1">湖南省</option>
-    <option value="2">福建省</option>
-</select>
-<!--选择城市-->
-<select id="city"></select>
+
 </body>
 </html>
 
