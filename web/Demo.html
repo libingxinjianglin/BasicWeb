@@ -4,12 +4,14 @@
     <meta charset="UTF-8">
     <script src="jquery-1.8.3.js" type="text/javascript"></script>
     <script>
-        $(function () {
-            $("#sb").click(function () {
-                  $("#nb").html("<font color='red'>不好啊</font>")
-            });
-
-        });
+        // $(function () {
+        //     $("#sb").click(function () {
+        //           $("#nb").html("<font color='red'>不好啊</font>")
+        //     });
+        //
+        // });
+        var $sb = $("#sb");   // js转化为jq
+        var jssb = $sb.get(0); //翻过来
 
     </script>
 </head>
